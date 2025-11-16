@@ -7,11 +7,17 @@ For each table, specify column names, data types, primary and foreign keys, and 
 ### Table: patients
 - id: INT, Primary Key, Auto Increment 
 - patient_name: String, Not Null
+- gender: INT (0 = Male, 1 = Female)
+- age: INT, Non-negative
+- past_medical_history: String
 - status: INT (0 = Enabled, 1 = disabled)
 
 ### Table: doctors
 - id: INT, Primary Key, Auto Increment 
 - doctor_name: String, Not Null
+- gender: INT (0 = Male, 1 = Female)
+- job_title: String
+- Areas_of_expertise: String
 - status: INT (0 = Enabled, 1 = disabled)
 
 ### Table: appointments
