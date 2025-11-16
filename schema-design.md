@@ -52,7 +52,7 @@ Provide a realistic JSON example of a document with nested fields or arrays.
     "location": "Market Street"
   }
 }
-```json
+
 
 ### Collection: feedback
 
