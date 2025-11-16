@@ -52,7 +52,7 @@ Provide a realistic JSON example of a document with nested fields or arrays.
     "location": "Market Street"
   }
 }
-
+```
 
 ### Collection: feedback
 
@@ -63,6 +63,7 @@ Provide a realistic JSON example of a document with nested fields or arrays.
   "appointmentId": 51,
   "feedbackDetail": "The doctor Jim Terry was not patient enough." 
 }
+```
 
 ### Collection: logs
 
@@ -71,7 +72,7 @@ Provide a realistic JSON example of a document with nested fields or arrays.
   "_id": "ObjectId('64abc323456')",
   "logDetail": "a sample log details." 
 }
-
+```
 
 ### Collection: messages
 
@@ -83,3 +84,4 @@ Provide a realistic JSON example of a document with nested fields or arrays.
   "to": "Jim Terry" 
   "message": "My leg is still paint after a week of medication. Any suggestion?" 
 }
+```
