@@ -61,7 +61,9 @@ Provide a realistic JSON example of a document with nested fields or arrays.
   "_id": "ObjectId('64abc223456')",
   "patientName": "John Smith",
   "appointmentId": 51,
-  "feedbackDetail": "The doctor Jim Terry was not patient enough." 
+  "feedback": {
+    "type": "Complaints"
+    "content": "The doctor Jim Terry was not patient enough." 
 }
 ```
 
