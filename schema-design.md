@@ -64,6 +64,14 @@ Provide a realistic JSON example of a document with nested fields or arrays.
   "feedbackDetail": "The doctor Jim Terry was not patient enough." 
 }
 
+### Collection: logs
+
+```json
+{
+  "_id": "ObjectId('64abc323456')",
+  "logDetail": "a sample log details." 
+}
+
 
 ### Collection: messages
 
