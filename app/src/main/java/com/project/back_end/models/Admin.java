@@ -66,6 +66,10 @@ public class Admin {
     public void SetId(Long id){
         this.id = id;
     }
+
+    public void SetUsername(String username){
+        this.username = username;
+    }
     
     public void SetPassword(String password){
         this.password = password;
