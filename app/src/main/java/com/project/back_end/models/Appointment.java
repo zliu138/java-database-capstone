@@ -1,5 +1,6 @@
 package com.project.back_end.models;
 
+@Entity
 public class Appointment {
 
   // @Entity annotation:
@@ -12,6 +13,9 @@ public class Appointment {
 //      - Represents the unique identifier for each appointment.
 //      - The @Id annotation marks it as the primary key.
 //      - The @GeneratedValue(strategy = GenerationType.IDENTITY) annotation auto-generates the ID value when a new record is inserted into the database.
+    @Id
+    @GeneratedValue   
+    private Long id;
 
 // 2. 'doctor' field:
 //    - Type: private Doctor
@@ -19,6 +23,9 @@ public class Appointment {
 //      - Represents the doctor assigned to this appointment.
 //      - The @ManyToOne annotation defines the relationship, indicating many appointments can be linked to one doctor.
 //      - The @NotNull annotation ensures that an appointment must be associated with a doctor when created.
+    @NotNull
+    @ManyToOne
+    private Doctor doctor;
 
 // 3. 'patient' field:
 //    - Type: private Patient
@@ -26,6 +33,9 @@ public class Appointment {
 //      - Represents the patient assigned to this appointment.
 //      - The @ManyToOne annotation defines the relationship, indicating many appointments can be linked to one patient.
 //      - The @NotNull annotation ensures that an appointment must be associated with a patient when created.
+    @NotNull
+    @ManyToOne
+    private Patient patient;
 
 // 4. 'appointmentTime' field:
 //    - Type: private LocalDateTime
